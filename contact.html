@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Liên hệ</title>
+    <!--js-->
+    <link rel="stylesheet" href="js/bootstrap-3.3.7.js" />
+    <link rel="stylesheet" href="js/jquery-1.11.3.min.js" />
+    <script src="js/ajax/jquery.min.js"></script>
+    <script src="js/animsition-master/dist/js/animsition.js"></script>
+    <script src="js/fullpage/jquery.pagepiling.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/animsition-master/css/animsition.css" />
+    <link rel="stylesheet" href="css/fullpage/jquery.pagepiling.css" />
+    <!--javascript-->
+    <script>
+      $(document).ready(function() {
+        $(".animsition").animsition({
+          inClass: "fade-in-left",
+          outClass: "fade-out-left",
+          inDuration: 1500,
+          outDuration: 800,
+          linkElement: ".animsition-link",
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: true,
+          loadingParentElement: "body", //animsition wrapper element
+          loadingClass: "animsition-loading",
+          loadingInner: "", // e.g '<img src="loading.svg" />'
+          timeout: false,
+          timeoutCountdown: 5000,
+          onLoadEvent: true,
+          browser: ["animation-duration", "-webkit-animation-duration"],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          overlay: false,
+          overlayClass: "animsition-overlay-slide",
+          overlayParentElement: "body",
+          transition: function(url) {
+            window.location.href = url;
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!--navication-->
+    <div class="container-fluid" id="nav-desktop">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div
+              class="animsition"
+              data-animsition-in-class="fade-in-left-lg"
+              data-animsition-in-duration="2000"
+              data-animsition-out-class="fade-out-left-lg"
+              data-animsition-out-duration="3000"
+              id="menu-nav"
+            >
+              <ul>
+                <li>
+                  <a class="animsition-link" href="index.html">Trang chủ</a>
+                </li>
+                <li><a class="animsition-link" href="#">Dịch vụ</a></li>
+                <li><a class="animsition-link" href="#">Tin tức</a></li>
+                <li><a class="animsition-link" href="#">Nguồn lực</a></li>
+                <li>
+                  <a class="animsition-link picked" href="contact.html"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-1 col-lg-offset-6">
+            <div
+              class="animsition"
+              data-animsition-in-class="fade-in-left-lg"
+              data-animsition-in-duration="2000"
+              data-animsition-out-class="fade-out-left-lg"
+              data-animsition-out-duration="3000"
+              id="logo"
+            >
+              <img src="image/Logo/logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <p>Liên hệ với chúng tôi</p>
+          <p>info@mcsg.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

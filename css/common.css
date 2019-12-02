@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*FONT*/
+@font-face {
+  font-family: Mycontentfont;
+  src: url("../fonts/fonts/Lato-Regular.ttf"),
+    url("../fonts/fonts/Lato-Regular.eot"),
+    url("../fonts/fonts/Lato-Regular.woff");
+}
+@font-face {
+  font-family: Mytitlefont;
+  src: url("../fonts/fonts/Lato-Bold.eot"), url("../fonts/fonts/Lato-Bold.ttf"),
+    url("../fonts/fonts/Lato-Bold.woff");
+}
+@font-face {
+  font-family: blackLato;
+  src: url("../fonts/fonts/Lato-Black.eot"),
+    url("../fonts/fonts/Lato-Black.ttf"), url("../fonts/fonts/Lato-Black.woff");
+}
+@font-face {
+  font-family: light;
+  src: url("../fonts/fonts/Lato-Light.eot"),
+    url("../fonts/fonts/Lato-Light.ttf"), url("../fonts/fonts/Lato-Light.woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: blackLato;
+}
+body {
+  font-family: Mycontentfont;
+}
+p {
+  font-size: 16px;
+}
+a {
+  font-size: 16px;
+}
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
